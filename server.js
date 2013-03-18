@@ -23,7 +23,9 @@ function requestHandler(req, res, data) {
 		try {
 			controllers[actionInfo.controller][actionInfo.action](actionInfo.query, function(result) {
 				try {
-					pageHandler['200'](req, res, JSON.stringify(result));
+					var json = JSON.stringify(result);
+					if (actionInfo.callback) json = callback + '(' + json + ');';
+					pageHandler['200'](req, res, json);
 				} catch (err) {
 					pageHandler['500'](req, res, err);
 				}

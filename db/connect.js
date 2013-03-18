@@ -22,6 +22,7 @@ var schemas = {};
 
 var tweetSchema = mongoose.Schema({
 	author: String,
+	title: String,
 	content: String,
 	datetime: Date,
 	lastModified: Date
