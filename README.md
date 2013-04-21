@@ -1,4 +1,5 @@
-twitter-like-api
-================
+##About Twitter-like-api
+A collection of APIs for Twitter-like application, including CRUD operations.
 
-A collection of API for Twitter-like application, based on MongoDB and Node.js
+##Tech
+Powered by Node.js and MongoDB
