@@ -1,4 +1,4 @@
-##About Twitter-like-api
+##About Twitter-like-API
 A collection of APIs for Twitter-like application, including CRUD operations.
 
 ##Tech
